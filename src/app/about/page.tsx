@@ -1,22 +1,36 @@
-// pages/about.js atau pages/about.tsx
 "use client";
 
-import { PaperClipIcon } from "@heroicons/react/20/solid";
-import { useState } from "react";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import BackToTopButton from "../components/BackToTopButton";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { PaperClipIcon, ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Field, Label, Switch } from "@headlessui/react";
 import Link from "next/link";
 
 export default function AboutAndContact() {
   const [agreed, setAgreed] = useState(false);
 
+  // Framer Motion animation variants
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
+  };
+
   return (
     <div className="bg-gray-900 text-white">
       {/* About Section */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        <div className="text-4xl font-bold text-center mb-8">About Me</div>
+      <motion.div
+        className=" min-h-screen container flex flex-col justify-center mx-auto px-4 sm:px-6 lg:px-8 py-12"
+        initial="hidden"
+        animate="visible"
+        variants={fadeInUp}
+      >
+        <div className="flex items-center justify-center">
+          <div className="text-4xl font-bold text-center mb-4">About Me</div>
+        </div>
+        <div className="text-center"></div>
         <div className="space-y-8">
-          <div className="text-lg">
+          <div className="text-lg mt-4">
             <p>
               Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim
               incididunt cillum culpa consequat. Excepteur qui ipsum aliquip
@@ -54,25 +68,33 @@ export default function AboutAndContact() {
                   View
                 </a>
               </li>
+              <a href="#contact-me" className="flex justify-center pt-20">
+                <button className="relative inline-flex items-center px-8 py-3 text-base font-semibold text-white bg-teal-600 rounded-lg shadow-lg ring-1 ring-teal-700 ring-opacity-50 hover:bg-teal-700 transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-offset-2">
+                  <span className="absolute inset-0 bg-teal-800 rounded-lg opacity-20 transform scale-90 transition-transform duration-300 ease-in-out group-hover:scale-100" />
+                  <span className="relative">Go to Contact Me</span>
+                </button>
+              </a>
             </ul>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Contact Section */}
-      <div className="bg-white px-6 py-24 sm:py-32 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center relative z-10">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Contact Me
-          </h2>
-          <p className="mt-2 text-lg leading-8 text-gray-600">
-            Let me know your need!
-          </p>
+      <div id="contact-me" className=" bg-red-700 flex flex-col lg:flex-row">
+        <div className="bg-blue-600 min-h-screen flex lg:w-1/2 items-center justify-center lg:pr-6 ">
+          <div className="text-center lg:text-left">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Contact Me
+            </h2>
+            <p className="mt-2 text-lg leading-8 text-gray-600">
+              Let me know your need!
+            </p>
+          </div>
         </div>
         <form
           action="#"
           method="POST"
-          className="mx-auto mt-16 max-w-xl sm:mt-20"
+          className="bg-yellow-400 lg:w-1/2 mt-8 lg:mt-0 lg:pl-6 flex flex-col justify-center"
         >
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
@@ -227,6 +249,9 @@ export default function AboutAndContact() {
             </button>
           </div>
         </form>
+        <a href="#top" className="fixed bottom-6 right-6">
+          <BackToTopButton />
+        </a>
       </div>
     </div>
   );

@@ -37,3 +37,13 @@ body {
     appearance: none;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  #contact-me {
+    padding: 4px;
+  }
+}
