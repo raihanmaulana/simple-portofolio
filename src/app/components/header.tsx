@@ -34,13 +34,19 @@ export default function Header() {
             href="/#contact"
             className="hover:text-gray-400 transition-colors duration-300"
           >
-            Contact
+            Social Media
           </Link>
           <Link
             href="/#about"
             className="hover:text-gray-400 transition-colors duration-300"
           >
             About
+          </Link>
+          <Link
+            href="/#contact-me"
+            className="hover:text-gray-400 transition-colors duration-300"
+          >
+            Contact
           </Link>
         </nav>
 

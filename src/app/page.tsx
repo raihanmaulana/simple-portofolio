@@ -13,12 +13,12 @@ import { Field, Label, Switch } from "@headlessui/react";
 
 const links = [
   { name: "View Projects", href: "#projects" },
-  { name: "Internship program", href: "#contact" },
+  { name: "Internship program", href: "#contact-me" },
   { name: "Our values", href: "#" },
   { name: "Meet our leadership", href: "#" }
 ];
 const stats = [
-  { name: "Project Counter", value: "1" },
+  { name: "Project Counter", value: "2" },
   { name: "Full-time Backend Developer", value: "2 Years Experience" },
   { name: "Hours per week", value: "40" },
   { name: "Paid time off", value: "Unlimited" }
@@ -36,7 +36,7 @@ export default function Home() {
       {/* Home Section */}
       <div
         id="home"
-        className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-3 lg:h-screen xl:h-screen 2xl:h-screen"
+        className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-3 lg:h-screen xl:h-screen 2xl:h-screen flex items-center justify-start"
       >
         <img
           alt=""
@@ -67,8 +67,8 @@ export default function Home() {
             className="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
           />
         </div>
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="pt-44 mx-auto max-w-2xl lg:mx-0 gap-8">
+        <div className="container max-w-7xl px-6 lg:px-8 2xl: mx-auto">
+          <div className=" mx-auto max-w-2xl lg:mx-0 gap-8">
             <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
               Welcome To My Next.JS Portfolio Web
             </h2>
@@ -372,13 +372,18 @@ export default function Home() {
           </div>
           <div className="text-center"></div>
           <div className="space-y-8">
-            <div className="text-lg mt-4">
+            <div className="text-lg mt-4 text-center justify-center">
               <p>
-                Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim
-                incididunt cillum culpa consequat. Excepteur qui ipsum aliquip
-                consequat sint. Sit id mollit nulla mollit nostrud in ea officia
-                proident. Irure nostrud pariatur mollit ad adipisicing
-                reprehenderit deserunt qui eu.
+                Sebagai seorang Backend Developer yang berdedikasi, saya
+                berfokus pada pengembangan solusi yang efisien dan scalable,
+                terutama menggunakan Laravel dan MySQL. Selain keterampilan
+                teknis saya, saya juga merupakan penggemar game yang aktif. Hobi
+                ini tidak hanya memberikan hiburan tetapi juga menginspirasi
+                kreativitas dan pemecahan masalah saya dalam dunia pengembangan
+                perangkat lunak. Dengan minat yang mendalam terhadap teknologi
+                dan permainan, saya selalu berusaha untuk menciptakan aplikasi
+                yang tidak hanya berkinerja tinggi tetapi juga memberikan
+                pengalaman pengguna yang memuaskan.
               </p>
             </div>
             <div className="border-t border-gray-700 pt-8">
