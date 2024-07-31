@@ -80,8 +80,8 @@ export default function AboutAndContact() {
       </motion.div>
 
       {/* Contact Section */}
-      <div id="contact-me" className=" bg-red-700 flex flex-col lg:flex-row">
-        <div className="bg-blue-600 min-h-screen flex lg:w-1/2 items-center justify-center lg:pr-6 ">
+      <div id="contact-me" className=" flex flex-col lg:flex-row">
+        <div className="bg-white min-h-screen flex lg:w-1/2 items-center justify-center lg:pr-6 ">
           <div className="text-center lg:text-left">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Contact Me
@@ -94,9 +94,9 @@ export default function AboutAndContact() {
         <form
           action="#"
           method="POST"
-          className="bg-yellow-400 lg:w-1/2 mt-8 lg:mt-0 lg:pl-6 flex flex-col justify-center"
+          className="bg-white lg:w-1/2 mt-8 lg:mt-0 lg:pl-6 flex flex-col justify-center"
         >
-          <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 pr-8">
             <div>
               <label
                 htmlFor="first-name"
@@ -240,7 +240,7 @@ export default function AboutAndContact() {
               </Label>
             </Field>
           </div>
-          <div className="mt-10">
+          <div className="mt-10 mr-8">
             <button
               type="submit"
               className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"

@@ -7,7 +7,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-black text-white py-4 shadow-md">
+    <header className="bg-black text-white py-4 shadow-md fixed top-0 left-0 w-full z-50">
       <div className="container mx-auto flex items-center justify-between px-6">
         {/* Logo */}
         <div className="text-2xl font-bold">
@@ -19,25 +19,25 @@ export default function Header() {
         {/* Navigation Links */}
         <nav className="hidden md:flex space-x-6">
           <Link
-            href="/"
+            href="#home"
             className="hover:text-gray-400 transition-colors duration-300"
           >
             Home
           </Link>
           <Link
-            href="/projects"
+            href="/#projects"
             className="hover:text-gray-400 transition-colors duration-300"
           >
             Projects
           </Link>
           <Link
-            href="/contact"
+            href="/#contact"
             className="hover:text-gray-400 transition-colors duration-300"
           >
             Contact
           </Link>
           <Link
-            href="/about"
+            href="/#about"
             className="hover:text-gray-400 transition-colors duration-300"
           >
             About
@@ -58,25 +58,25 @@ export default function Header() {
         <nav className="md:hidden bg-gray-800 text-white py-4">
           <div className="flex flex-col items-center">
             <Link
-              href="/"
+              href="/#home"
               className="py-2 hover:text-gray-400 transition-colors duration-300"
             >
               Home
             </Link>
             <Link
-              href="/projects"
+              href="/#projects"
               className="py-2 hover:text-gray-400 transition-colors duration-300"
             >
               Projects
             </Link>
             <Link
-              href="/contact"
+              href="/#contact"
               className="py-2 hover:text-gray-400 transition-colors duration-300"
             >
               Contact
             </Link>
             <Link
-              href="/about"
+              href="/#about"
               className="py-2 hover:text-gray-400 transition-colors duration-300"
             >
               About
