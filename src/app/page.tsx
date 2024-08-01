@@ -76,13 +76,13 @@ export default function Home() {
               className="mt-6 text-lg leading-8 text-gray-300"
               style={{ textAlign: "justify" }}
             >
-              Hi, I'm Raihan Maulana, a passionate Backend Developer with a
-              solid foundation in PHP and Laravel. Currently, I'm expanding my
-              skills into Frontend Development, eager to create seamless,
+              Hi, I&apos;m Raihan Maulana, a passionate Backend Developer with a
+              solid foundation in PHP and Laravel. Currently, I&apos;m expanding
+              my skills into Frontend Development, eager to create seamless,
               user-friendly interfaces. I thrive on transforming complex
               challenges into elegant solutions and am dedicated to continuous
-              learning and improvement. Let's connect and build something great
-              together!
+              learning and improvement. Let&apos;s connect and build something
+              great together!
             </p>
           </div>
           <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
@@ -592,7 +592,7 @@ export default function Home() {
                 type="submit"
                 className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Let's talk
+                Let&apos;s talk
               </button>
             </div>
           </form>
