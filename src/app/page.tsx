@@ -4,7 +4,7 @@ import { ArrowUp } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import SIKPB from "/public/SIKPB.png";
-import BG from "/public/bg.jpg";
+import BG from "/public/BG.jpg";
 import Link from "next/link";
 import BackToTopButton from "./components/BackToTopButton";
 import { useState, useEffect } from "react";
