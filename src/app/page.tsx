@@ -13,9 +13,9 @@ import { Field, Label, Switch } from "@headlessui/react";
 
 const links = [
   { name: "View Projects", href: "#projects" },
-  { name: "Internship program", href: "#contact-me" },
-  { name: "Our values", href: "#" },
-  { name: "Meet our leadership", href: "#" }
+  { name: "Pricing", href: "#" },
+  { name: "Contact", href: "#contact" }
+  // { name: "", href: "#" }
 ];
 const stats = [
   { name: "Project Counter", value: "2" },
@@ -374,16 +374,15 @@ export default function Home() {
           <div className="space-y-8">
             <div className="text-lg mt-4 text-center justify-center">
               <p>
-                Sebagai seorang Backend Developer yang berdedikasi, saya
-                berfokus pada pengembangan solusi yang efisien dan scalable,
-                terutama menggunakan Laravel dan MySQL. Selain keterampilan
-                teknis saya, saya juga merupakan penggemar game yang aktif. Hobi
-                ini tidak hanya memberikan hiburan tetapi juga menginspirasi
-                kreativitas dan pemecahan masalah saya dalam dunia pengembangan
-                perangkat lunak. Dengan minat yang mendalam terhadap teknologi
-                dan permainan, saya selalu berusaha untuk menciptakan aplikasi
-                yang tidak hanya berkinerja tinggi tetapi juga memberikan
-                pengalaman pengguna yang memuaskan.
+                As a dedicated Backend Developer, I focus on developing
+                efficient and scalable solutions, particularly using Laravel and
+                MySQL. Beyond my technical skills, I am also an active gaming
+                enthusiast. This hobby not only provides entertainment but also
+                inspires my creativity and problem-solving abilities in the
+                software development world. With a deep interest in both
+                technology and gaming, I always strive to create applications
+                that are not only high-performing but also offer a satisfying
+                user experience.
               </p>
             </div>
             <div className="border-t border-gray-700 pt-8">

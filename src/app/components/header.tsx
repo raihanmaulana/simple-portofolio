@@ -7,7 +7,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-black text-white py-4 shadow-md fixed top-0 left-0 w-full z-50">
+    <header className="bg-black text-white py-4 shadow-md sticky top-0 left-0 w-full z-50">
       <div className="container mx-auto flex items-center justify-between px-6">
         {/* Logo */}
         <div className="text-2xl font-bold">
